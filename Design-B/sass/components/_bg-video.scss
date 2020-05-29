@@ -1,0 +1,33 @@
+// .bg-video {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     z-index: -1;
+//     opacity: .15;
+//     overflow: hidden;
+
+//     &__content {
+//         height: 100%;
+//         width: 100%;
+//         object-fit: cover;
+//     }
+// }
+.header__video{
+    margin: 1rem;
+    border-radius: .4rem;
+    border: 1px solid #433754;
+    background: url("./img/here--video.jpg") 50% no-repeat;
+    background-size: cover;
+    flex: 1 ;
+}
+.video__caption{
+    position: absolute;
+    left: 3rem;
+    bottom: 2.8rem;
+    font-size: 1.5rem;
+    background-color: hsla(0,0%,100%,.7);
+    color: #433754;
+    font-weight: 400;
+}

@@ -1,0 +1,34 @@
+.basis__paragraph-box{
+    text-align: center;
+    margin-top: .5rem;
+}
+.btn__invite--box{
+    display: block;
+    padding: 1rem;
+    text-align: center;
+}
+.possible__box,
+.learn__box{
+    text-align: center;
+    margin: 2.5rem auto ;
+}
+.video__box{
+    margin: 2rem auto 5rem;
+    width: 45%;
+    cursor: pointer;
+    height: 385px;
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.1);
+    border: 1px solid #f8f4f4;
+}
+.special__line{
+    margin: 9rem auto 0; 
+    display: block;
+}
+
+.add__padding{
+    padding: 2rem 3rem;
+}

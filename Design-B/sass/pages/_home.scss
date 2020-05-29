@@ -1,0 +1,45 @@
+.section__workers,
+.story__section{
+    padding: 8rem 9.7rem 0;
+    color: #433754;
+
+}
+
+// connect section
+.connect{
+    &--span{
+        display: block;
+    }
+    &__link{
+        color: inherit;
+        transition: all .2s;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__box{
+        margin: 1.4rem 10rem 3rem;
+    }
+    &__box--1{
+        width: 47%;
+       &::before{ 
+           content: "1";
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 1px dashed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin: 0 auto 3rem;
+       }
+    }
+    &__facebook,
+    &__twitter{
+        color: inherit;
+        font-weight: 700;
+    }
+}

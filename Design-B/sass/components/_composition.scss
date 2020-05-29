@@ -1,0 +1,45 @@
+.counter{
+    &--box{
+    font-size: 4.5rem;
+    font-weight: 400;
+    width: 20%;
+    margin: .5rem auto;
+    display: flex;
+
+    }
+   &__box--1,
+   &__box--2,
+   &__box--3,
+   &__box--4,
+   &__box--5{
+       border-radius: .6rem;
+       width: 3.8rem;
+       height: 5.6rem; 
+       background-color: #433754;
+       color: #fff;
+       position: relative;
+       margin: .7rem .3rem 0 .3rem;
+    }
+    &__dollar,
+    &__comma{
+        display: block;
+        margin-right: 1rem;
+        font-size: 5.5rem;
+    }
+    &__uppercard{
+        height: 50%;
+        width: 100%;
+        border-bottom: 1px solid #2c2732;
+      
+    }
+    &__lowercar{
+
+    }
+   &__number{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       
+   }
+}

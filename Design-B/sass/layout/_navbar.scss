@@ -1,0 +1,45 @@
+.navbar{
+    // width: 100%;
+    &__first{
+        @include flexBetween;
+        padding: 2rem 9.4rem;
+        align-items: center;
+        line-height: 4rem;
+    }
+    &__logobox{
+        width: 8%;
+    }
+    &__logo{
+        @include imageRes;
+    }
+    &__listbox{
+        width: 60%;
+    }
+    &__list{
+        @include flexBetween;
+        font-size: 1.6rem;
+        color: #433754;
+        list-style: none;
+    }
+    &__item{
+        display: inline-block;
+    }
+    &__link{
+        text-decoration: none;
+        color: $color-black;
+    }
+    &__link--lang{
+        &::before{
+            content: "\E90D";
+        }
+        &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 15px;
+        display: inline-block;
+    }
+    }
+}

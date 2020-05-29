@@ -1,0 +1,21 @@
+.story{
+   &__block{
+       display: flex;
+       justify-content: space-between;
+   }
+   &__block--one,
+   &__block--two,
+   &__block--three{
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,.1);
+    border: 1px solid #f8f4f4;
+    width: 32%;
+ 
+   }
+   &__image{
+       width: 80%;
+       margin: auto;
+       display: block;
+   }
+}

@@ -1,0 +1,24 @@
+.btn{
+    &__invite{
+        display: inline-block;
+        background-image:linear-gradient(240deg,#6112fe,#7813fe);
+        padding: 1.6rem 3rem;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 5rem;
+        font-size: 2rem;
+        font-weight: 300;
+        &:visited,
+        &:active,
+        &:focus{
+            outline: none;
+        }
+       
+    }
+    
+}
+#btn--samll{
+    padding: .6rem 2rem .7rem 2rem;
+    font-size: 1.5rem;
+}
