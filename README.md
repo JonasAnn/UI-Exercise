@@ -17,5 +17,8 @@ No back-end or programmatic logic is required, just the front-end implementation
 ## Languages Used
 
 - HTML
-- Scss
-- Js
+- CSS(Scss)
+- Javascript
+
+### Author
+[Jonah Ifeoma](https://github.com/JonasAnn)
