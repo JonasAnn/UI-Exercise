@@ -1,0 +1,399 @@
+.main{
+    @include flexBetween;
+    width: 100%;
+
+}
+.section{
+    &__friends{
+        width: 25%;
+        background-color: #ffffff;
+        border-right: .2rem solid #BCBCBC;
+        position: relative;
+    }
+    &__chat{
+        width: 50%;
+        background-color: #ffffff;
+        border-right: .2rem solid #BCBCBC;
+        position: relative;
+    }
+    &__profile{
+        width: 25%;
+
+    }
+}
+// friends section design
+.friend{
+    &__box1,
+    &__box2,
+    &__box3,
+    &__box4,
+    &__box5,
+    &__box6,
+    &__box7,
+    &__box8{
+    width: 100%;
+    @include flexBetween;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-left: .4rem solid transparent;
+    transition: all .1s;
+    &:hover,
+    &:focus{
+        border-left: .4rem solid #0485FD;
+        background-color: #F8F9FB;
+    }
+
+    }
+    &__image{
+        width: 20%;
+        height: auto;
+        display: block;
+        border-radius: 50%;
+    }
+    &__textbox{
+        width: 75%;
+        font-size: 1.7rem;
+       
+        padding-top: .5rem;
+        
+    }
+    &__paragraph{
+        font-weight: 600;
+        color: #5B616B;
+        position: relative;
+    }
+    &__paragraph--span{
+        display: block;
+        color: #CDCED1;
+        font-size: 1.3rem;
+    }
+}
+.period{
+    font-size: 1.7rem;
+    display: inline-block;
+    margin: 0 .5rem;
+    position: absolute;
+    top: 1.8rem;
+    right: 5.5rem;
+    
+}
+.add--btn{
+    font-size: 3rem;
+    background-color: #0485FD;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 1rem 1.7rem;
+    border: none;
+    position: absolute;
+    bottom: 1rem;
+    left: 15rem;
+    box-shadow: -1px 3px 16px 0px rgba(91, 68, 223, 0.75);
+}
+
+// chat section design
+// design for header
+.section{
+    &__chat--headerbox{
+        @include flexBetween;
+        padding: 1rem 2rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    &__chat--header{
+        font-size: 1.5rem;
+        color: #666A6D;
+        font-weight: 600;
+        width: 30%;
+    }
+    &__chat--online{
+        width: 30%;
+        text-align: right;
+  
+    }
+
+}
+.chat{
+    &--online1,
+    &--online2,
+    &--online3,
+    &--online4{
+        border-radius: 50%;
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        img{
+            @include imageRes;
+        }
+    }
+    &--online4{
+        position: relative;
+        font-size: 1.5rem;
+        color: #0485FD;
+        background-color: #DAF5FF;
+    }
+    &--online1,
+    &--online2,
+    &--online3{
+        margin-right: -.7rem;
+    }
+}   
+.chat--online--span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.searchbox{
+    position: absolute;
+    bottom: 0;
+    border-top: .1rem solid #BCBCBC;
+    padding: 1rem 1rem;
+    width: 100%;
+    background-color: #ffffff;
+    &--input{
+        width: 72%;
+        margin: 0 .5rem;
+        padding: 1rem 1rem;
+        border-radius: .5rem;
+        border: none;
+        background-color: #F8F8FA;
+        &::placeholder{
+            color: rgb(179, 179, 187);
+            font-size: 1.7rem;
+        }
+    }
+    &--icon{
+        display: inline-block;
+        font-size: 2rem;
+        color: rgb(194, 195, 199);
+        &:not(:last-child){
+            margin-right: .8rem;
+        }
+    }
+}
+
+//design for message body
+.message{
+    background-color: #F1F2F6;
+    color: #9296A0;
+    padding: 1.5rem;
+    margin: 0 5rem 1rem 5rem;
+    font-size: 1.5rem;
+    &--one,
+    &--two,
+    &--three{
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+    &--one{
+        width: 40%
+    }
+    &--two{
+        width: 50%
+    }
+    &--three{
+        width: 70%;
+    }
+    &--four,
+    &--five{
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        position: absolute;
+        right: 0;
+        background-color: #0187FE;
+        color: #ffffff;
+    }
+    &--four{
+        width: 70%;
+    }
+}
+.message{
+    &__image{
+    width: 100%;
+    height: auto;
+    }
+    &__seen{
+        margin: 1rem 0 1.5rem 5rem;
+        color: #9296A0;
+        font-size: 1.3rem;
+    }
+    &__chat--image1,
+    &__chat--image2{
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+       
+    }
+    &__chat--image1{
+        left: 0.5rem;
+        bottom: 15rem;
+    }
+    &__chat--image2{
+        right: 0.5rem;
+        bottom: 4rem;
+
+    }
+}
+
+//section third
+.section__profile{
+    padding: 2rem 2rem 0 2rem;
+    &--image{
+        width: 35%;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+    }
+    &--header{
+        color: #5B616B;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    &--paragraph{
+        color: rgb(169, 173, 184);
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+.btn{
+    background-color: #BCD8E9;
+    color: #137EDF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: .4rem;
+    display: inline-block;
+    border: none;
+    margin-top: 1rem;
+    &:not(:last-child){
+        margin-right: 1rem;
+    }
+    &:hover,
+    &:focus{
+        outline: none;
+    }
+    &--box{
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.search__input{
+    display: inline-block;
+    border: none;
+    color: #9296A0;
+        width: 90%;
+        background-color: transparent;
+        margin-bottom: 1rem;
+    &::placeholder{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+    }
+}
+.search__icon{
+    font-size: 1.5rem;
+    color: #9296A0;
+    text-align: right;
+    width: 6%;
+    display: inline-block;
+    margin-bottom: 1rem; 
+}
+.color__change{
+    font-size: 1.5rem;
+    color: #9296A0;
+    width: 74%;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.radio__btn--box{
+    width: 25%;
+    margin-top: 2rem;
+    display: inline-block;
+  
+}
+input[type=radio]{
+    display: none;
+}
+.radio__label{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    padding-top: .5rem;
+
+}
+.radio{
+    &__blue--label{
+        background-color: #1085F0;
+    }
+    &__purple--label{
+        background-color: purple;
+    }
+    &__green--label{
+        background-color: green;
+    }
+    &__orange--label{
+        background-color: orange;
+    }
+}
+.fa-check{
+    font-size: .8rem;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+input[type="radio"]:checked + .radio__label .fa-check {
+    opacity: 1;
+}
+.change__emoji{
+    font-size: 1.5rem;
+    color: #9296A0;
+    width: 90%;
+    display: inline-block;
+    margin-top: 1.5rem;   
+}
+
+.emoji__icon{
+    font-size: 2rem;
+    color: #9296A0;
+    display: inline-block;
+    width: 8%;
+    margin-bottom: 1rem;
+}
+.shared__photo{
+    font-size: 1.5rem;
+    color: #9296A0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.gallery__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.gallery__image{
+    width: 24%;
+    border-radius: .5rem;
+    display: block;
+    margin-bottom: .5rem;
+}
+.view__more{
+    font-size: 1.5rem;
+    color: #0485FD;
+    text-decoration: none;
+    font-weight: 600;
+    &--para{
+        text-align: center;
+        margin-top: 1.5rem;
+}
+}

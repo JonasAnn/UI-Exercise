@@ -1,0 +1,187 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 81.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  background-color: #FFCC66;
+  color: #fff; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.primary__heading {
+  color: #9E9FA4;
+  font-size: 2.5rem;
+  font-weight: 400; }
+
+.box__left--icon {
+  display: block;
+  font-size: 3.5rem;
+  color: #D0D3E8;
+  margin-top: -1rem; }
+
+.credit__card--paragraph1 {
+  color: #A7A7A7;
+  font-size: 1.5rem; }
+
+.credit__card--paragraph2 {
+  color: #D3D3D3;
+  font-weight: 200;
+  font-size: 1.5rem; }
+
+.secondary__heading {
+  font-size: 2.2rem;
+  color: #97989C;
+  font-weight: 400; }
+
+.box__right--cost {
+  color: #2F2F2F;
+  font-size: 3rem; }
+
+hr {
+  width: 100%;
+  border-color: rgba(92, 87, 87, 0.3); }
+
+.card__box {
+  width: 65%;
+  border-radius: .5rem;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  margin-top: 1.2rem;
+  box-shadow: 6px 6px 23px -3px #d9a132; }
+  @media only screen and (max-width: 56.25em) {
+    .card__box {
+      width: 90%;
+      margin: 2rem auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .card__box {
+      flex-direction: column;
+      width: 90%;
+      margin: 2rem auto; } }
+  .card__box--left {
+    width: 35%;
+    background-color: #F2F2F2;
+    padding: 3rem 4rem 4rem 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .card__box--left {
+        width: 40%; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__box--left {
+        width: 100%; } }
+  .card__box--right {
+    width: 65%;
+    background-color: #FFFFFF;
+    padding: 3rem 4rem 4rem 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .card__box--right {
+        width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .card__box--right {
+        width: 100%; } }
+
+.card__left--header {
+  display: flex;
+  justify-content: space-between; }
+
+.credit__card--1, .credit__card--2, .credit__card--3 {
+  width: 100%;
+  border: .2rem solid #E7E7E7;
+  border-radius: .3rem;
+  background-color: #FFFFFF;
+  transition: border .1s;
+  cursor: pointer;
+  padding: 1rem 0 1.5rem 1.5rem;
+  margin-top: 4rem; }
+  .credit__card--1:hover, .credit__card--1:focus, .credit__card--2:hover, .credit__card--2:focus, .credit__card--3:hover, .credit__card--3:focus {
+    border: .2rem solid #A3ACD0; }
+
+.credit__card--imagebox {
+  width: 27%;
+  overflow: hidden;
+  border-radius: 1rem; }
+
+.credit__card--image {
+  width: 100%;
+  object-fit: cover; }
+
+.card__right--header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem; }
+
+.box__right--transaction1, .box__right--transaction2, .box__right--transaction3, .box__right--transaction4, .box__right--transaction5, .box__right--transaction6 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4rem; }
+
+.transaction__iconbox {
+  width: 8%; }
+
+.transaction__roundox {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: .2rem solid #EBEBEB;
+  position: relative;
+  color: #AAAAAA;
+  margin-top: .8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .transaction__roundox {
+      margin: .1rem 1rem 0 0;
+      height: 2rem;
+      width: 2rem; } }
+
+.transaction__icon {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.transaction__detailsbox {
+  width: 50%; }
+
+.transaction__costbox {
+  width: 40%;
+  text-align: right; }
+
+.transaction__details {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2F2F2F; }
+  @media only screen and (max-width: 37.5em) {
+    .transaction__details {
+      font-size: 1.5rem; } }
+
+.transaction__date {
+  display: block;
+  font-weight: 300;
+  color: #DADADA;
+  font-size: 1.2rem;
+  margin-top: .6rem; }
+
+.transaction__cost {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #ACB8D6;
+  padding-top: .6rem; }
+
+.green__cost {
+  color: #99D17C; }

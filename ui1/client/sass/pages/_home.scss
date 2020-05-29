@@ -1,0 +1,181 @@
+.card{
+    &__base{
+        @include flexBetween;
+        width: 90%;
+        margin: auto;
+        margin-top: 8rem;
+    }
+    &__left{
+        width: 50%;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+    &__right{
+        width: 50%;
+        background-color: #5B68D8;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        overflow: hidden;
+    }
+    &__left--header{
+        width: 100%;
+        box-shadow: -1px 4px 5px -3px rgba(143,130,143,1);
+        padding: 2rem;
+        position: relative;
+    }
+    &__right--header{
+        background-color: #4D51BF;
+        width: 100%;
+        padding: 2rem;
+        position: relative;
+    }
+    &__left--contact{
+        width: 100%;
+        background-color: #EDF2F6;
+    }
+    &__right--summary{
+        font-size: 1.5rem;
+        display: inline-block;
+        width: 20%;
+        color: rgb(215, 218, 223);
+    }
+    &__right--content{
+        width: 100%;
+        padding: 2rem;
+        @include flexBetween;
+    }
+}    
+//left design header
+.left{
+   &__header--profile{
+       margin-bottom: 2rem;
+   }
+    &__header--image{
+        display: inline-block;
+        text-align: left;
+        border-radius: .5rem;
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1.1rem;
+    }
+    &__header--name{
+        display: inline-block;
+        color: rgb(93, 91, 233);
+        font-weight: 600;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 3.2rem;
+    }
+    &__header--notify{
+        font-size: 1.5rem;
+        color: rgb(93, 91, 233);
+        background-color: #ECF5FD;
+        border-radius: .5rem;
+        height: 3rem;
+        width: 3rem;
+        position: relative;
+        display: inline-block;
+        right: -49rem;
+        top: -.5rem;
+    
+        .header__notify--icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__header--contact{
+        font-weight: 600;
+        font-size: 2rem;
+        color: rgb(81, 83, 90);
+    }
+    &__header--paragraph{
+        font-size: 1.5rem;
+        color: #B4B7BD;
+        margin-bottom: 2rem;
+    }
+}
+///right design
+
+.right{
+    &__header--image{
+        display: inline-block;
+        text-align: left;
+        border-radius: .5rem;
+        height: 6rem;
+        width: 6rem;
+        margin-right: 1.2rem;
+    }
+    &__header--name{
+        font-size: 1.8rem;
+        font-weight: 600;
+        display: inline-block;
+        position: absolute;
+        top: 3.5rem;
+        color: #ffffff;
+    }
+    &__header--span{
+            display: block;
+            font-weight: 300;
+            color: rgb(215, 218, 223);
+            font-size: 1.3rem;
+            margin-top: .3rem;
+    }  
+    &__summary--span{
+        display: block;
+        margin-top: 1rem;
+    }
+    &__summary--color{
+        color: #ffffff;
+    }
+    &__list{
+        list-style: none;
+        width: 55%;
+        display: block;
+    }
+    &__item{
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: rgb(215, 218, 223);
+        position: relative;
+        padding-left: 2.5rem;
+        &:not(:last-child){
+            margin-bottom: 3rem;
+        }
+        &::before{
+            content: "";
+            height: 1.7rem;
+            width: 1.7rem;
+            display: inline-block;
+            border-radius: 50%;
+            border: .2rem solid #ECF5FD;
+            position: absolute;
+            top: .2rem;
+            left: 0;
+            
+        }
+    }
+    &__time{
+        display: block;
+        margin-top: 1rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    &__dotbox{
+        display: block;
+        width: 10%;
+        height: 32rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__dot{
+        font-size: 2rem;
+        display: block;
+        color: rgb(215, 218, 223);
+    }
+}
+

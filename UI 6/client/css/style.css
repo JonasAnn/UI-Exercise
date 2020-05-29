@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 81.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  background-color: #BEBAB7;
+  color: #fff; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.secondary__heading {
+  padding-top: 4rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-weight: 300; }
+  @media only screen and (max-width: 37.5em) {
+    .secondary__heading {
+      font-size: 4rem;
+      padding-bottom: 3rem; } }
+
+.btn {
+  width: 90%;
+  margin: auto;
+  padding: 1.5rem 0;
+  background-color: #1AB188;
+  color: #fff;
+  border-radius: .1rem;
+  border: none;
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      font-size: 3rem; } }
+
+.form__box {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 4rem;
+  background-color: #25333C;
+  border-radius: .6rem;
+  box-shadow: -0.1rem 0.6rem 1.6rem -0.1rem rgba(0, 0, 0, 0.7); }
+  @media only screen and (max-width: 37.5em) {
+    .form__box {
+      width: 90%; } }
+
+.form__button--box {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+  .form__button--box .btn {
+    font-weight: 300; }
+  .form__button--box .btn-up {
+    width: 50%;
+    text-transform: capitalize;
+    color: #DAF8F5; }
+  .form__button--box .btn-in {
+    width: 50%;
+    background-color: #44535A;
+    color: #99A9A9;
+    text-transform: capitalize; }
+
+.form__names--box {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 3.5rem auto; }
+
+.form__input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem 0;
+  border: .15rem solid #99A9A9;
+  padding-left: 1.5rem;
+  color: #99A9A9;
+  font-size: 1.5rem; }
+  .form__input:focus {
+    outline: none; }
+
+.form__label--holder {
+  position: relative;
+  font-size: 2.2rem;
+  color: #99A9A9; }
+
+.form__label {
+  position: absolute;
+  top: .5rem;
+  left: 1.5rem;
+  cursor: text; }
+  .form__label .asterisk {
+    display: inline-block;
+    color: #1AB188;
+    padding-left: .25rem; }
+
+.full--width {
+  width: 90%;
+  margin: 3.5rem auto; }
+
+.half--width {
+  width: 48%; }
+
+.hide {
+  display: none; }
+
+.form__section {
+  padding: 6rem 0 2rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .form__section {
+      padding: 8rem 0 0 0; } }

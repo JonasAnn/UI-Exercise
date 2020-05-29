@@ -1,0 +1,122 @@
+.header{
+    padding: 0 0 0 3.5rem;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    @include respond(phone){
+        padding: 2rem;
+    }
+}
+.steps{
+    &__box{
+        width: 60%;
+        margin: 1rem 0;
+        @include flexBetween;
+        @include respond(phone){
+            width: 100%;
+            
+        }
+        &--1,
+        &--2,
+        &--3,
+        &--4{
+            width: 17%;
+            @include respond(phone){
+                width: 25%;
+                margin: 2rem 0;
+            }
+        }
+    }
+    &__image{
+        width: 45%;
+        display: block;
+        margin: auto;
+        @include respond(phone){
+            width: 60%;
+        }
+    }
+}
+
+.number__box{
+    margin: 2.5rem 0 0 5rem;
+    width: 50%;
+    @include flexBetween;
+    @include respond(phone){
+        width: 90%;
+        margin: auto;
+    }
+   
+    &--1,
+    &--2,
+    &--3,
+    &--4{
+       position: relative;
+        font-size: 2.5rem;
+        color: #ffffff;
+        font-weight: 600;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: .1rem dashed #BC9563;
+    }
+    &--text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.line{
+    width: 18%;
+    height: 3rem;
+    border-bottom: .1rem dashed #BC9563;
+}
+.social{
+    &__btn--box{
+        position: absolute;
+        top: 9rem;
+        right: 2rem;
+        @include flexBetween;
+    }
+    &__btn{
+        background-color: #ffffff;
+        color: #000000;
+        position: relative;
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        &:not(:last-child){
+            margin-right: .7rem;
+        }
+    }
+    &__icon{
+        font-size: 1.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.bg__image{
+    @include imageRes;
+    &-box{
+        width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include respond(phone){
+        display: none;
+    }
+}
+}
+
+.bg__design{
+    position: absolute;
+    height: 100vh;
+    width: 2.5rem;
+    background-image: linear-gradient(to bottom, #BC9563, rgba(188, 149, 99, 0.3));
+    z-index: -1;
+    right: 0;
+    top: 0;
+
+}

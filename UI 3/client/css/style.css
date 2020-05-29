@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 81.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  background-color: #fff; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.secondary__heading {
+  font-size: 2.5rem;
+  color: #CECFD4; }
+
+.tertiary__heading {
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+.date {
+  font-weight: 400;
+  display: block;
+  margin-top: 1rem;
+  color: #B6BBC0; }
+
+.btn {
+  box-shadow: 0 0.1rem 0.2rem rgba(92, 92, 88, 0.75);
+  border: 0.3rem solid #fff;
+  padding: .6rem 1.8rem;
+  border-radius: 5rem;
+  color: #fff;
+  background-color: #67DDEB;
+  margin-top: 1rem;
+  cursor: pointer; }
+  .btn:focus, .btn:active {
+    outline: none; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      font-size: 1.4rem; } }
+
+.btn-yellow {
+  background-color: #FECA3E; }
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border-left: 1rem solid #85D9C9;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  margin: 2rem auto 0 auto;
+  box-shadow: -1px 4px 11px -4px #d6d2d6; }
+  .card__text {
+    width: 65%;
+    padding-top: 1rem; }
+  .card__btn {
+    width: 20%;
+    text-align: right; }
+
+.form__section {
+  margin: 5rem auto;
+  width: 50%;
+  background-color: #F8FAF9;
+  padding: 3rem;
+  box-shadow: -1px 4px 11px -3px #8f828f; }
+  @media only screen and (max-width: 37.5em) {
+    .form__section {
+      width: 90%;
+      margin: 8rem auto; } }

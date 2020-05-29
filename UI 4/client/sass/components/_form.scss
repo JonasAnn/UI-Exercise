@@ -1,0 +1,87 @@
+.form{
+    &__box{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        padding: 4rem;
+        background-color: $color-gray-dark;
+        border-radius: .6rem;
+        box-shadow: -.1rem .6rem 1.6rem -.1rem rgba($color-black,0.7);
+        @include respond(phone) {
+            width: 90%;
+        }
+    }
+    &__button--box{
+        width: 90%;
+        margin: auto;
+        @include flexBetween;
+        .btn{
+            font-weight: 300;
+        }
+        .btn-up{
+            width: 50%;
+            text-transform: capitalize;
+            color: #DAF8F5;
+        }
+        .btn-in{
+            width: 50%;
+            background-color: #44535A;
+            color: #99A9A9;
+            text-transform: capitalize;
+            
+        }
+    }
+    &__names--box{
+        width: 90%;
+        @include flexBetween;
+        margin: 3.5rem auto;
+    }
+
+    &__input{
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        padding: 1rem 0;
+        border: .15rem solid #99A9A9;
+        padding-left: 1.5rem;
+        color: #99A9A9;
+        font-size: 1.5rem;   
+        &:focus{
+            outline: none;
+        }
+    }
+}
+.form{
+    &__label--holder{
+        position: relative;
+        font-size: 2.2rem;
+        color: #99A9A9;
+      
+       
+    }
+    &__label{
+       position: absolute;
+       top: .5rem;
+       left: 1.5rem;
+       cursor: text;
+        .asterisk{
+            display: inline-block;
+            color: $color-green;
+            padding-left: .25rem;
+        }
+      
+    }
+}
+
+.full--width{
+    width: 90%;
+    margin: 3.5rem auto;
+   
+}
+.half--width{
+    width: 48%;
+   
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"> 
+  <link rel="shortcut icon" type="image/png" href="./css/images/logo.png"> 
+  <title>UI5</title> 
+ </head>
+ <body>
+<main class="main">
+    <section class="card__base">
+        <div class="card__left">
+            <!-- card left header -->
+            <div class="card__left--header">
+                <div class="left__header--profile">
+                    <img src="css/images/avatar.jpg" alt="profile image" class="left__header--image">
+                    <h3 class="left__header--name">
+                        Holden Caulfield
+                    </h3>
+                    <div class="left__header--notify">
+                        <i class="fa fa-bell-o header__notify--icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="left__header--contactbox">
+                    <h3 class="left__header--contact">Contact List</h3>
+                    <p class="left__header--paragraph">Fingerstack Dochkog Kubi Hing</p>
+                </div>
+                <div class="left__header--buttons">
+                    <button class="btn btn--contact">
+                        New Contact
+                    </button>
+                    <button class="btn btn--task">
+                        New Task
+                    </button>
+                    <input type="text" class="left__header--input" id="search" placeholder="Search">
+                    <label for="search" class="left__header--search"><i class="fa fa-search" aria-hidden="true"></i></label>
+                </div>
+            </div>
+            <!-- card left contact body -->
+            <div class="card__left--contact">
+                <!-- card one -->
+                <div class="left__contact--one">   
+                    <label for="contact1" class="left__contact--label">
+                        <input type="checkbox" class="left__contact--radio" name="check--contact" id="contact1">
+                        <img src="css/images/avatar.jpg" alt="profile image" class="left__contact--image">
+                        <p class="left__contact--paragraph">
+                            Lucinda Massey
+                            <span class="left__contact--span">
+                                Management Consoltant
+                            </span>
+                        </p>
+                    </label>
+                        <p class="left__contact--settings">
+                            <i class="fa fa-cog" aria-hidden="true"></i>&nbsp;Edit
+                        </p>
+                </div>
+                 <!-- card two -->
+                 <div class="left__contact--two">   
+                    <label for="contact2" class="left__contact--label">
+                        <input type="checkbox" class="left__contact--radio" name="check--contact" id="contact2">
+                        <img src="css/images/man.jpg" alt="profile image" class="left__contact--image">
+                        <p class="left__contact--paragraph">
+                            Willie Becckie
+                            <span class="left__contact--span">
+                                Business Manager
+                            </span>
+                        </p>
+                    </label>
+                        <p class="left__contact--settings">
+                            <i class="fa fa-cog" aria-hidden="true"></i>&nbsp;Edit
+                        </p>
+                </div>
+                 <!-- card three -->
+                 <div class="left__contact--three">   
+                    <label for="contact3" class="left__contact--label">
+                        <input type="checkbox" class="left__contact--radio" name="check--contact" id="contact3">
+                        <img src="css/images/avatar.jpg" alt="profile image" class="left__contact--image">
+                        <p class="left__contact--paragraph">
+                            Lucinda Massey
+                            <span class="left__contact--span">
+                                Management Consoltant
+                            </span>
+                        </p>
+                    </label>
+                        <p class="left__contact--settings">
+                            <i class="fa fa-cog" aria-hidden="true"></i>&nbsp;Edit
+                        </p>
+                </div>
+            </div>
+        </div>
+
+
+<!-- right card design -->
+
+        <div class="card__right">
+
+             <!-- card right header -->
+             <div class="card__right--header">
+                <img src="css/images/man.jpg" alt="profile image" class="right__header--image">
+                <p class="right__header--name">
+                    Willie Becckie
+                    <span class="right__header--span">
+                        Business Manager
+                    </span>
+                </p>
+                <button class="btn-blue">
+                    New Task
+                </button>
+             </div>
+             <div class="card__right--content">
+                 <div class="card__right--summary">
+                 <p>
+                    <span class="right__summary--color"> Open </span> <em>(14)</em>
+                    <span class="right__summary--span">In Progress <em>(8)</em></span>
+                    <span class="right__summary--span">Closed <em>(4)</em></span>
+                 </p>
+                 </div>
+                 <ul class="right__list">
+                     <li class="right__item">
+                        Coconut distlled Fresh Water in the 
+                         <span class="right__time">
+                             <em>10 min ago</em>
+                         </span>
+                     </li>
+                     <li class="right__item">
+                        Coconut distlled Fresh Water in the 
+                         <span class="right__time">
+                             <em>40 min ago</em>
+                         </span>
+                     </li>
+                     <li class="right__item">
+                        What is peace without loving people
+                         <span class="right__time">
+                             <em>28 min ago</em>
+                         </span>
+                     </li>
+                     <li class="right__item">
+                        Best seller you can ever get online 
+                         <span class="right__time">
+                             <em>21 min ago</em>
+                         </span>
+                     </li>
+                     <li class="right__item">
+                        Travle yo teh unknown for the right
+                         <span class="right__time">
+                             <em>30 min ago</em>
+                         </span>
+                     </li>
+                 </ul>
+                 <div class="right__dotbox">
+                    <span class="right__dot">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </span>
+                    <span class="right__dot">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </span>
+                    <span class="right__dot">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </span>
+                    <span class="right__dot">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </span>
+                    <span class="right__dot">
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </span>
+                 </div>
+             </div>
+        </div>
+
+    </section>
+
+    <!-- box design by the right -->
+    <div class="design__box">
+        <div class="box box1">
+
+        </div>
+        <div class="box box2">
+            
+        </div>
+        <div class="box box3">
+            
+        </div>
+        <div class="box box4">
+            
+        </div>
+        <div class="box box5">
+            
+        </div>
+        <div class="box box6">
+            
+        </div>
+        <div class="box box7">
+            
+        </div>
+        <div class="box box8">
+            
+        </div>
+        <div class="box box9">
+            
+        </div>
+
+    </div>
+    </main>
+  
+ </body>
+</html>
+ 

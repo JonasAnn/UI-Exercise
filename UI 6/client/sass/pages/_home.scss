@@ -1,0 +1,10 @@
+.form{
+    &__section{
+    padding: 6rem 0 2rem 0;
+    @include respond(phone) {
+        padding: 8rem 0 0 0;
+    }
+}
+  
+
+}

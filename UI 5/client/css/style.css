@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 81.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  background-color: #3B4044;
+  color: #C8C7C5; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.secondary__heading {
+  padding-top: 4rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  color: #B4B2B3; }
+  @media only screen and (max-width: 37.5em) {
+    .secondary__heading {
+      font-size: 4rem;
+      padding-bottom: 3rem; } }
+
+.btn {
+  width: 80%;
+  margin: auto;
+  padding: 1.5rem 0;
+  background-color: #DC514C;
+  color: #fff;
+  border-radius: .5rem;
+  border: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+  cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      font-size: 3rem; } }
+
+.form__box {
+  width: 35%;
+  margin: auto;
+  text-align: center;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  padding: 0 0 4rem 0;
+  position: relative;
+  background-color: #fafafa; }
+  @media only screen and (max-width: 37.5em) {
+    .form__box {
+      width: 90%; } }
+
+.form__input {
+  display: block; }
+
+.form__colorbox {
+  width: 100%;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(to right, #15A282 12.5%, #1ABD9E 12.5%, #1ABD9E 25%, #C4372D 25%, #C4372D 37.5%, #DF4F4E 37.5%, #DF4F4E 50%, #FBA733 50%, #FBA733 62.5%, #FECC03 62.5%, #FECC03 75%, #139DDE 75%, #139DDE 87.5%, #34CCFE 87.5%, #34CCFE 100%); }
+
+.form__input {
+  width: 80%;
+  margin: 3rem auto;
+  padding: 2rem 0 2rem 1.5rem;
+  border-radius: .5rem;
+  border: .2rem solid #e7e0e0;
+  color: #B4B2B3;
+  font-size: 2rem;
+  transition: all .1s; }
+  @media only screen and (max-width: 37.5em) {
+    .form__input {
+      padding: 2.5rem 0 2.5rem 2rem;
+      margin: 3.5rem auto; } }
+  .form__input::placeholder {
+    font-size: 2rem;
+    color: #ccc; }
+  .form__input:focus {
+    outline: none;
+    border: .2rem solid #139DDE; }
+
+.form__section {
+  height: 100vh;
+  padding: 8rem 0 8rem 0; }

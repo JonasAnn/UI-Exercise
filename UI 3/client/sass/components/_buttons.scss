@@ -1,0 +1,20 @@
+.btn{
+    box-shadow: 0 0.1rem .2rem rgba(92, 92, 88, 0.75);
+    border: .3rem solid $color-white;
+    padding: .6rem 1.8rem;
+    border-radius: 5rem;
+    color: $color-white;
+    background-color: #67DDEB;
+    margin-top: 1rem;
+    cursor: pointer;
+    &:focus,
+    &:active{
+        outline: none;
+    }
+    @include respond(phone) {
+        font-size: 1.4rem;
+    }
+}
+.btn-yellow{
+    background-color: #FECA3E;
+}

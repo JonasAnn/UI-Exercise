@@ -1,0 +1,27 @@
+.navbar{
+    width: 100%;
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #EBC387;
+    display: flex;
+    &__logobox{
+        width: 5%;
+    }
+    &__logo{
+        @include imageRes;
+    }
+    &__textbox{
+        width: auto;
+        margin-left: .5rem;
+    }
+    &__text{
+        font-size: 2rem;
+        font-weight: 600;
+        &--span{
+            display: block;
+            font-weight: 900;
+            font-size: 4rem;
+        }
+    }
+   
+}

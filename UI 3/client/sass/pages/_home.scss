@@ -1,0 +1,15 @@
+.form{
+    &__section{
+    margin: 5rem auto;
+    width: 50%;
+    background-color: #F8FAF9;
+    padding: 3rem;
+    box-shadow: -1px 4px 11px -3px rgba(143,130,143,1);
+    @include respond(phone) {
+        width: 90%;
+        margin: 8rem auto;
+    }
+}
+  
+
+}

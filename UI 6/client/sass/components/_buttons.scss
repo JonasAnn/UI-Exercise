@@ -1,0 +1,16 @@
+.btn{
+    width: 90%;
+    margin: auto;
+    padding: 1.5rem 0;
+    background-color: $color-green;
+    color: $color-white;
+    border-radius: .1rem;
+    border: none;
+    font-size: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    @include respond(phone) {
+        font-size: 3rem;
+    }
+}

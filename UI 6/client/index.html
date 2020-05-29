@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"> 
+  <link rel="shortcut icon" type="image/png" href="./css/images/logo.png"> 
+  <title>UI6</title> 
+ </head>
+ <body>
+<main class="main">
+    <section class="form__section">
+        <div class="form__box">
+            <div class="form__button--box">
+                <button class="btn btn-up">Sign Up</button>
+                <button class="btn btn-in">Log In</button>
+            </div>
+
+            <h2 class="secondary__heading">
+                Sign Up for Free
+            </h2>
+
+            <form action="/" method="/">
+                <div class="form__names--box">
+                    <div class="form__label--holder half--width">
+                        <input type="text" id="fname" class="form__input" name="fname" required>
+                        <label class="form__label" for="fname">First Name<span class="asterisk">&#42;</span>
+                        </label>
+                    </div>
+                    <div class="form__label--holder half--width">
+                          
+                        <input type="lname" id="lname" class="form__input" name="lname" required> 
+                        <label class="form__label" for="lname">Last Name<span class="asterisk">&#42;</span>
+                        </label>
+                    </div>
+               
+                </div>
+                <div class="form__label--holder full--width">
+                    <label class="form__label" for="email">Email Address<span class="asterisk">&#42;</span></label>
+                    <input type="email" id="email" class="form__input" name="email" required>        
+                </div>
+        
+                <div class="form__label--holder full--width">
+                    <label class="form__label" for="password">Set a Password<span class="asterisk">&#42;</span></label>
+                    <input type="password" id="password" class="form__input" name="password" required>       
+                </div>
+
+                <button class="btn">Get Started</button>
+            </form>
+        </div>
+    </section>
+</main>
+<script src="./js/app.js"></script>
+ </body>
+</html>
+ 

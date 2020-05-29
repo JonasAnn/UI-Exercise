@@ -1,0 +1,41 @@
+.primary__header{
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #EBC387;
+    &--span{
+        display: block;
+        margin-top: -1.5rem;
+    }
+}
+
+.primary__paragraph{
+    color: #fff;
+    font-size: 2rem;
+    width: 45%;
+    font-weight: 200;
+    margin: 1.5rem 0;
+    &--span{
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    @include respond(phone){
+        width: 90%;
+        margin: 2rem 0;
+    }
+}
+
+
+.secondary__heading{
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.steps__paragraph{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}

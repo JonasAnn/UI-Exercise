@@ -1,0 +1,14 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.secondary__heading{
+    padding-top: 4rem;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: #B4B2B3;
+    @include respond(phone) {
+        font-size: 4rem;
+        padding-bottom: 3rem;
+    }
+}
